@@ -74,6 +74,12 @@ func TestCacheControl(t *testing.T) {
 		t.Errorf("strings map didn't store 'private'")
 	}
 
+	cc = NewCacheControl([]byte(""))
+	if cc.IsSet("private") {
+		t.Errorf("empty cache-control string set 'private' flag")
+
+	}
+
 }
 
 func ExampleNewCacheControl() {
