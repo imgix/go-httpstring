@@ -1,5 +1,5 @@
 # go-httpstring
-parse http header strings efficiently
+ragel-based http string parser library
 
 ## cache-control
 
