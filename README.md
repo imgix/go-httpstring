@@ -14,7 +14,11 @@ parse cache-control, get max-age
 
 cc = NewCacheControl([]byte("max-age=100; must-revalidate"))
 if cc.IsSet("max-age") {
-	_, d := cc.GetDuration("max-age")
+	d, _ := cc.GetDuration("max-age")
+	time.Sleep(d)
+}
+// alternatively get and check if set in one call
+if d, set := cc.GetDuration("max-age"); set {
 	time.Sleep(d)
 }
 ```

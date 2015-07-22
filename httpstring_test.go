@@ -18,7 +18,7 @@ func TestCacheControl(t *testing.T) {
 		t.Errorf("'must-revalidate' not set")
 
 	}
-	if set, d := cc.GetDuration("max-age"); !set {
+	if d, set := cc.GetDuration("max-age"); !set {
 		t.Errorf("'max-age bit not set")
 
 	} else if d != time.Second*100 {
@@ -27,7 +27,7 @@ func TestCacheControl(t *testing.T) {
 
 	cc = NewCacheControl([]byte("max-age=100; s-maxage=200"))
 	fmt.Printf("%v\n", cc)
-	if set, d := cc.GetDuration("s-maxage"); set {
+	if d, set := cc.GetDuration("s-maxage"); set {
 		if d != time.Second*200 {
 			t.Errorf("'s-maxage not parsed: %v", d)
 		}
@@ -54,14 +54,14 @@ func TestCacheControl(t *testing.T) {
 		}
 
 	}
-	if set, d := cc.GetDuration("max-age"); !set {
+	if d, set := cc.GetDuration("max-age"); !set {
 		t.Errorf("'max-age' bit not set")
 
 	} else if d != time.Second*300 {
 		t.Errorf("'max-age' not parsed: %v", d)
 	}
 	cc = NewCacheControl([]byte("public; private; no-cache; no-store; max-age=f00"))
-	if set, _ := cc.GetDuration("max-age"); set {
+	if _, set := cc.GetDuration("max-age"); set {
 		t.Errorf("malformed 'max-age' extracted")
 
 	}
@@ -85,7 +85,7 @@ func TestCacheControl(t *testing.T) {
 func ExampleNewCacheControl() {
 
 	cc := NewCacheControl([]byte("max-age=100; must-revalidate"))
-	if set, v := cc.GetDuration("max-age"); set {
+	if v, set := cc.GetDuration("max-age"); set {
 		time.Sleep(v)
 
 	}
