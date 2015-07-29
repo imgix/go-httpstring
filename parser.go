@@ -360,7 +360,7 @@ tr63:
 
 
 		setbool("max-stale");
-		if (val) {
+		if val {
 			setduration("max-stale")
 		}
 	
@@ -559,7 +559,7 @@ tr62:
 
 
 		setbool("max-stale");
-		if (val) {
+		if val {
 			setduration("max-stale")
 		}
 	
@@ -7355,7 +7355,7 @@ tr189:
 
 
 		setbool("max-stale");
-		if (val) {
+		if val {
 			setduration("max-stale")
 		}
 	

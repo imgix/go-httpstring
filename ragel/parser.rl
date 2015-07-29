@@ -60,7 +60,7 @@ func NewCacheControl(data []byte) *CacheControl {
 
 	action max_stale {
 		setbool("max-stale");
-		if (val) {
+		if val {
 			setduration("max-stale")
 		}
 	}

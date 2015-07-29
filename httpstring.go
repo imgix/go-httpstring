@@ -60,12 +60,8 @@ func (c *CacheControl) setflag(s string) {
 }
 
 func (c *CacheControl) GetDuration(s string) (time.Duration, bool) {
-	var t time.Duration
-	if !c.IsSet(s) {
-		return t, false
-	}
-	return c.durations[s], true
-
+	t, ok := c.durations[s]
+	return t, ok
 }
 
 func (c *CacheControl) GetVal(s string) (bool, string) {

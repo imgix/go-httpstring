@@ -91,3 +91,25 @@ func ExampleNewCacheControl() {
 	}
 
 }
+
+func TestFlagNotDuration(t *testing.T) {
+
+	cc := NewCacheControl([]byte("max-stale"))
+	if d, ok := cc.GetDuration("max-stale"); ok {
+		t.Errorf("non duration max-stale, got duration: %v", d)
+
+	}
+	if !cc.IsSet("max-stale") {
+		t.Errorf("max-stale not detected")
+	}
+	/*
+
+		cc = NewCacheControl([]byte("max-stale=10"))
+		if d, ok := cc.GetDuration("max-stale"); !ok {
+			t.Errorf("duration max-stale not detected")
+		} else if d != time.Second*10 {
+			t.Errorf("duration max-stale incorrect: %v", d)
+
+		}
+	*/
+}
