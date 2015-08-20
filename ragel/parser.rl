@@ -70,7 +70,7 @@ func NewCacheControl(data []byte) *CacheControl {
 	action sec_neg  { neg = -1 }
 	action sec_incr { num = num * 10 + (int(fc)-'0') }
 
-	tchar = [!#-'*-.0-:@A-Z^-`a-z|~];
+	tchar = [!#-'*-+\-.0-:@A-Z^-`a-z|~];
 	value_token = tchar+ >str_init %str_end ;
 	value_string = '"' ( [^"]* >str_init %str_end ) '"' ;
 	value = '=' ( value_token | value_string ) ;
