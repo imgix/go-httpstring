@@ -59,4 +59,3 @@ if set, v := cc.GetVal("private"); set {
 	v == "foo"
 }
 ```
-
