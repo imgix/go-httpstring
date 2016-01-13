@@ -1,5 +1,6 @@
-# go-httpstring
-ragel-based http string parser library
+# go-httpstring: ragel-based http string parser library
+
+[![GODOC](https://godoc.org/github.com/imgix/go-httpstring?status.svg)](http://godoc.org/github.com/imgix/go-httpstring)
 
 ## cache-control
 
