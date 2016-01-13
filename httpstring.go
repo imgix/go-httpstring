@@ -87,7 +87,7 @@ func (c *CacheControl) SetString(s, v string) bool {
 
 }
 
-func (c *CacheControl) SetBoolg(s string) bool {
+func (c *CacheControl) SetBool(s string) bool {
 
 	s = strings.ToLower(s)
 	if _, b := cacheflaglookup[s]; b {
