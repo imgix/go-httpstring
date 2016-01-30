@@ -94,7 +94,7 @@ func NewCacheControl(data []byte) *CacheControl {
 
 	ext = extension - def ;
 	dir = ( def | ext );
-	main := space* dir ( space* "," space* dir )* ;
+	main := space* dir ( space* [,;] space* dir )* ;
 	write init;
 	write exec;
 }%%
