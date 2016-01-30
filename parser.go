@@ -514,6 +514,8 @@ st_case_0:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 124:
@@ -639,11 +641,13 @@ tr187:
 			goto _test_eof2
 		}
 	st_case_2:
-// line 643 "parser.go"
+// line 645 "parser.go"
 		switch data[p] {
 		case 32:
 			goto st2
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		}
 		if 9 <= data[p] && data[p] <= 13 {
@@ -700,13 +704,15 @@ tr9:
 			goto _test_eof17
 		}
 	st_case_17:
-// line 704 "parser.go"
+// line 708 "parser.go"
 		switch data[p] {
 		case 32:
 			goto tr40
 		case 33:
 			goto st17
 		case 44:
+			goto tr42
+		case 59:
 			goto tr42
 		case 124:
 			goto st17
@@ -759,7 +765,7 @@ tr11:
 			goto _test_eof5
 		}
 	st_case_5:
-// line 763 "parser.go"
+// line 769 "parser.go"
 		if data[p] == 34 {
 			goto tr14
 		}
@@ -782,11 +788,13 @@ tr14:
 			goto _test_eof18
 		}
 	st_case_18:
-// line 786 "parser.go"
+// line 792 "parser.go"
 		switch data[p] {
 		case 32:
 			goto st2
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		}
 		if 9 <= data[p] && data[p] <= 13 {
@@ -804,6 +812,8 @@ tr14:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -863,6 +873,8 @@ tr14:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 88:
@@ -915,6 +927,8 @@ tr14:
 			goto st1
 		case 45:
 			goto st22
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 124:
@@ -960,6 +974,8 @@ tr14:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -1015,6 +1031,8 @@ tr14:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 71:
@@ -1065,6 +1083,8 @@ tr14:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 69:
@@ -1114,6 +1134,8 @@ tr14:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st6
@@ -1206,7 +1228,7 @@ tr15:
 			goto _test_eof26
 		}
 	st_case_26:
-// line 1210 "parser.go"
+// line 1232 "parser.go"
 		switch data[p] {
 		case 32:
 			goto tr40
@@ -1218,6 +1240,8 @@ tr15:
 			goto tr53
 		case 58:
 			goto st17
+		case 59:
+			goto tr42
 		case 124:
 			goto st17
 		case 126:
@@ -1274,13 +1298,15 @@ tr53:
 			goto _test_eof27
 		}
 	st_case_27:
-// line 1278 "parser.go"
+// line 1302 "parser.go"
 		switch data[p] {
 		case 32:
 			goto tr55
 		case 33:
 			goto st17
 		case 44:
+			goto tr56
+		case 59:
 			goto tr56
 		case 124:
 			goto st17
@@ -1343,7 +1369,7 @@ tr57:
 			goto _test_eof28
 		}
 	st_case_28:
-// line 1347 "parser.go"
+// line 1373 "parser.go"
 		switch data[p] {
 		case 32:
 			goto tr55
@@ -1353,6 +1379,8 @@ tr57:
 			goto tr56
 		case 58:
 			goto st17
+		case 59:
+			goto tr56
 		case 124:
 			goto st17
 		case 126:
@@ -1396,6 +1424,8 @@ tr57:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -1447,6 +1477,8 @@ tr57:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 65:
@@ -1496,6 +1528,8 @@ tr57:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -1547,6 +1581,8 @@ tr57:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 69:
@@ -1596,6 +1632,8 @@ tr57:
 		case 33:
 			goto st16
 		case 44:
+			goto tr63
+		case 59:
 			goto tr63
 		case 61:
 			goto st7
@@ -1688,7 +1726,7 @@ tr18:
 			goto _test_eof34
 		}
 	st_case_34:
-// line 1692 "parser.go"
+// line 1730 "parser.go"
 		switch data[p] {
 		case 32:
 			goto tr40
@@ -1700,6 +1738,8 @@ tr18:
 			goto tr65
 		case 58:
 			goto st17
+		case 59:
+			goto tr42
 		case 124:
 			goto st17
 		case 126:
@@ -1756,13 +1796,15 @@ tr65:
 			goto _test_eof35
 		}
 	st_case_35:
-// line 1760 "parser.go"
+// line 1800 "parser.go"
 		switch data[p] {
 		case 32:
 			goto tr62
 		case 33:
 			goto st17
 		case 44:
+			goto tr63
+		case 59:
 			goto tr63
 		case 124:
 			goto st17
@@ -1825,7 +1867,7 @@ tr67:
 			goto _test_eof36
 		}
 	st_case_36:
-// line 1829 "parser.go"
+// line 1871 "parser.go"
 		switch data[p] {
 		case 32:
 			goto tr62
@@ -1835,6 +1877,8 @@ tr67:
 			goto tr63
 		case 58:
 			goto st17
+		case 59:
+			goto tr63
 		case 124:
 			goto st17
 		case 126:
@@ -1878,6 +1922,8 @@ tr67:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -1931,6 +1977,8 @@ tr67:
 			goto st1
 		case 45:
 			goto st39
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 124:
@@ -1976,6 +2024,8 @@ tr67:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -2027,6 +2077,8 @@ tr67:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 82:
@@ -2076,6 +2128,8 @@ tr67:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -2127,6 +2181,8 @@ tr67:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 83:
@@ -2177,6 +2233,8 @@ tr67:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 72:
@@ -2226,6 +2284,8 @@ tr67:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st8
@@ -2318,7 +2378,7 @@ tr21:
 			goto _test_eof45
 		}
 	st_case_45:
-// line 2322 "parser.go"
+// line 2382 "parser.go"
 		switch data[p] {
 		case 32:
 			goto tr40
@@ -2330,6 +2390,8 @@ tr21:
 			goto tr76
 		case 58:
 			goto st17
+		case 59:
+			goto tr42
 		case 124:
 			goto st17
 		case 126:
@@ -2386,13 +2448,15 @@ tr76:
 			goto _test_eof46
 		}
 	st_case_46:
-// line 2390 "parser.go"
+// line 2452 "parser.go"
 		switch data[p] {
 		case 32:
 			goto tr78
 		case 33:
 			goto st17
 		case 44:
+			goto tr79
+		case 59:
 			goto tr79
 		case 124:
 			goto st17
@@ -2455,7 +2519,7 @@ tr80:
 			goto _test_eof47
 		}
 	st_case_47:
-// line 2459 "parser.go"
+// line 2523 "parser.go"
 		switch data[p] {
 		case 32:
 			goto tr78
@@ -2465,6 +2529,8 @@ tr80:
 			goto tr79
 		case 58:
 			goto st17
+		case 59:
+			goto tr79
 		case 124:
 			goto st17
 		case 126:
@@ -2508,6 +2574,8 @@ tr80:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -2558,6 +2626,8 @@ tr80:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -2611,6 +2681,8 @@ tr80:
 			goto st1
 		case 45:
 			goto st51
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 124:
@@ -2656,6 +2728,8 @@ tr80:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -2707,6 +2781,8 @@ tr80:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 69:
@@ -2756,6 +2832,8 @@ tr80:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -2807,6 +2885,8 @@ tr80:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 65:
@@ -2856,6 +2936,8 @@ tr80:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -2907,6 +2989,8 @@ tr80:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 73:
@@ -2956,6 +3040,8 @@ tr80:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -3007,6 +3093,8 @@ tr80:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 65:
@@ -3056,6 +3144,8 @@ tr80:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -3107,6 +3197,8 @@ tr80:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 69:
@@ -3157,6 +3249,8 @@ tr80:
 			goto st16
 		case 44:
 			goto tr95
+		case 59:
+			goto tr95
 		case 61:
 			goto st3
 		case 124:
@@ -3202,6 +3296,8 @@ tr80:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -3255,6 +3351,8 @@ tr80:
 			goto st1
 		case 45:
 			goto st64
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 124:
@@ -3300,6 +3398,8 @@ tr80:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -3359,6 +3459,8 @@ tr80:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 65:
@@ -3408,6 +3510,8 @@ tr80:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -3459,6 +3563,8 @@ tr80:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 72:
@@ -3509,6 +3615,8 @@ tr80:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 69:
@@ -3558,6 +3666,8 @@ tr80:
 		case 33:
 			goto st16
 		case 44:
+			goto tr106
+		case 59:
 			goto tr106
 		case 61:
 			goto st9
@@ -3643,13 +3753,15 @@ tr24:
 			goto _test_eof70
 		}
 	st_case_70:
-// line 3647 "parser.go"
+// line 3757 "parser.go"
 		switch data[p] {
 		case 32:
 			goto tr108
 		case 33:
 			goto st70
 		case 44:
+			goto tr110
+		case 59:
 			goto tr110
 		case 124:
 			goto st70
@@ -3702,7 +3814,7 @@ tr26:
 			goto _test_eof11
 		}
 	st_case_11:
-// line 3706 "parser.go"
+// line 3818 "parser.go"
 		if data[p] == 34 {
 			goto tr29
 		}
@@ -3725,11 +3837,13 @@ tr29:
 			goto _test_eof71
 		}
 	st_case_71:
-// line 3729 "parser.go"
+// line 3841 "parser.go"
 		switch data[p] {
 		case 32:
 			goto tr105
 		case 44:
+			goto tr106
+		case 59:
 			goto tr106
 		}
 		if 9 <= data[p] && data[p] <= 13 {
@@ -3747,6 +3861,8 @@ tr29:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -3798,6 +3914,8 @@ tr29:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 79:
@@ -3847,6 +3965,8 @@ tr29:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -3898,6 +4018,8 @@ tr29:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 69:
@@ -3948,6 +4070,8 @@ tr29:
 			goto st16
 		case 44:
 			goto tr116
+		case 59:
+			goto tr116
 		case 61:
 			goto st3
 		case 124:
@@ -3993,6 +4117,8 @@ tr29:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -4044,6 +4170,8 @@ tr29:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 65:
@@ -4093,6 +4221,8 @@ tr29:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -4144,6 +4274,8 @@ tr29:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 83:
@@ -4193,6 +4325,8 @@ tr29:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -4244,6 +4378,8 @@ tr29:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 79:
@@ -4293,6 +4429,8 @@ tr29:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -4344,6 +4482,8 @@ tr29:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 77:
@@ -4394,6 +4534,8 @@ tr29:
 			goto st16
 		case 44:
 			goto tr126
+		case 59:
+			goto tr126
 		case 61:
 			goto st3
 		case 124:
@@ -4439,6 +4581,8 @@ tr29:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -4490,6 +4634,8 @@ tr29:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 76:
@@ -4539,6 +4685,8 @@ tr29:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -4592,6 +4740,8 @@ tr29:
 			goto st1
 		case 45:
 			goto st90
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 124:
@@ -4637,6 +4787,8 @@ tr29:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -4687,6 +4839,8 @@ tr29:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -4740,6 +4894,8 @@ tr29:
 			goto st1
 		case 45:
 			goto st93
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 124:
@@ -4785,6 +4941,8 @@ tr29:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -4836,6 +4994,8 @@ tr29:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 65:
@@ -4885,6 +5045,8 @@ tr29:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -4936,6 +5098,8 @@ tr29:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 72:
@@ -4985,6 +5149,8 @@ tr29:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -5036,6 +5202,8 @@ tr29:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 68:
@@ -5086,6 +5254,8 @@ tr29:
 			goto st16
 		case 44:
 			goto tr141
+		case 59:
+			goto tr141
 		case 61:
 			goto st3
 		case 124:
@@ -5131,6 +5301,8 @@ tr29:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -5186,6 +5358,8 @@ tr29:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 73:
@@ -5240,6 +5414,8 @@ tr29:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 86:
@@ -5289,6 +5465,8 @@ tr29:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -5340,6 +5518,8 @@ tr29:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 84:
@@ -5390,6 +5570,8 @@ tr29:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 69:
@@ -5439,6 +5621,8 @@ tr29:
 		case 33:
 			goto st16
 		case 44:
+			goto tr151
+		case 59:
 			goto tr151
 		case 61:
 			goto st12
@@ -5524,13 +5708,15 @@ tr30:
 			goto _test_eof107
 		}
 	st_case_107:
-// line 5528 "parser.go"
+// line 5712 "parser.go"
 		switch data[p] {
 		case 32:
 			goto tr153
 		case 33:
 			goto st107
 		case 44:
+			goto tr155
+		case 59:
 			goto tr155
 		case 124:
 			goto st107
@@ -5583,7 +5769,7 @@ tr32:
 			goto _test_eof14
 		}
 	st_case_14:
-// line 5587 "parser.go"
+// line 5773 "parser.go"
 		if data[p] == 34 {
 			goto tr35
 		}
@@ -5606,11 +5792,13 @@ tr35:
 			goto _test_eof108
 		}
 	st_case_108:
-// line 5610 "parser.go"
+// line 5796 "parser.go"
 		switch data[p] {
 		case 32:
 			goto tr150
 		case 44:
+			goto tr151
+		case 59:
 			goto tr151
 		}
 		if 9 <= data[p] && data[p] <= 13 {
@@ -5628,6 +5816,8 @@ tr35:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -5678,6 +5868,8 @@ tr35:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -5731,6 +5923,8 @@ tr35:
 			goto st1
 		case 45:
 			goto st112
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 124:
@@ -5776,6 +5970,8 @@ tr35:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -5827,6 +6023,8 @@ tr35:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 69:
@@ -5876,6 +6074,8 @@ tr35:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -5927,6 +6127,8 @@ tr35:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 65:
@@ -5976,6 +6178,8 @@ tr35:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -6027,6 +6231,8 @@ tr35:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 73:
@@ -6076,6 +6282,8 @@ tr35:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -6127,6 +6335,8 @@ tr35:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 65:
@@ -6176,6 +6386,8 @@ tr35:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -6227,6 +6439,8 @@ tr35:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 69:
@@ -6277,6 +6491,8 @@ tr35:
 			goto st16
 		case 44:
 			goto tr170
+		case 59:
+			goto tr170
 		case 61:
 			goto st3
 		case 124:
@@ -6322,6 +6538,8 @@ tr35:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -6373,6 +6591,8 @@ tr35:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 76:
@@ -6422,6 +6642,8 @@ tr35:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -6473,6 +6695,8 @@ tr35:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 67:
@@ -6523,6 +6747,8 @@ tr35:
 			goto st16
 		case 44:
 			goto tr176
+		case 59:
+			goto tr176
 		case 61:
 			goto st3
 		case 124:
@@ -6571,6 +6797,8 @@ tr35:
 			goto st1
 		case 45:
 			goto st129
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 124:
@@ -6616,6 +6844,8 @@ tr35:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -6667,6 +6897,8 @@ tr35:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 65:
@@ -6716,6 +6948,8 @@ tr35:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -6767,6 +7001,8 @@ tr35:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 65:
@@ -6816,6 +7052,8 @@ tr35:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st3
@@ -6867,6 +7105,8 @@ tr35:
 			goto st16
 		case 44:
 			goto st1
+		case 59:
+			goto st1
 		case 61:
 			goto st3
 		case 69:
@@ -6916,6 +7156,8 @@ tr35:
 		case 33:
 			goto st16
 		case 44:
+			goto st1
+		case 59:
 			goto st1
 		case 61:
 			goto st15
@@ -7008,7 +7250,7 @@ tr36:
 			goto _test_eof136
 		}
 	st_case_136:
-// line 7012 "parser.go"
+// line 7254 "parser.go"
 		switch data[p] {
 		case 32:
 			goto tr40
@@ -7020,6 +7262,8 @@ tr36:
 			goto tr185
 		case 58:
 			goto st17
+		case 59:
+			goto tr42
 		case 124:
 			goto st17
 		case 126:
@@ -7076,13 +7320,15 @@ tr185:
 			goto _test_eof137
 		}
 	st_case_137:
-// line 7080 "parser.go"
+// line 7324 "parser.go"
 		switch data[p] {
 		case 32:
 			goto tr187
 		case 33:
 			goto st17
 		case 44:
+			goto tr188
+		case 59:
 			goto tr188
 		case 124:
 			goto st17
@@ -7145,7 +7391,7 @@ tr189:
 			goto _test_eof138
 		}
 	st_case_138:
-// line 7149 "parser.go"
+// line 7395 "parser.go"
 		switch data[p] {
 		case 32:
 			goto tr187
@@ -7155,6 +7401,8 @@ tr189:
 			goto tr188
 		case 58:
 			goto st17
+		case 59:
+			goto tr188
 		case 124:
 			goto st17
 		case 126:
@@ -7401,7 +7649,7 @@ tr189:
 // line 46 "ragel/parser.rl"
 
  setstrings("no-cache") 
-// line 7405 "parser.go"
+// line 7653 "parser.go"
 		}
 	}
 
