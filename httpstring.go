@@ -13,6 +13,10 @@ import (
 	"time"
 )
 
+const (
+	good_return = 100
+)
+
 type cacheflag uint
 
 const (
@@ -169,4 +173,16 @@ func (c *CacheControl) String() string {
 
 func durationString(t string, d time.Duration) string {
 	return fmt.Sprintf("%s=%0.f", t, d.Seconds())
+}
+
+// NewCacheControl is a struct type used for storing parsed tokens
+func NewCacheControl(data []byte) (*CacheControl, error) {
+	cc := &CacheControl{
+		strings:   make(map[string]string),
+		durations: make(map[string]time.Duration),
+	}
+	if b := run(data, cc); b != good_return {
+		return nil, fmt.Errorf("failed to parse http string")
+	}
+	return cc, nil
 }

@@ -3,14 +3,20 @@ package httpstring
 import (
 	"strings"
 	"time"
+	"fmt"
 )
 
 
 %% machine cache_control_parser;
 %% write data;
 
-// NewCacheControl is a struct type used for storing parsed tokens
-func NewCacheControl(data []byte) *CacheControl {
+func run(data []byte, cc *CacheControl) int {
+
+	defer func() {
+		if r := recover(); r != nil {
+		    fmt.Println("Recovered in f", r)
+		}
+	}()
 	
 	cs, p, pe := 0, 0, len(data)
 	eof := pe
@@ -19,12 +25,6 @@ func NewCacheControl(data []byte) *CacheControl {
 	str_end := 0
 	num, neg := 0, 1
 	val := false
-
-
-	cc := &CacheControl{
-		strings: make(map[string]string),
-		durations: make(map[string]time.Duration),
-	}
 
 	setbool := func(s string) {cc.setflag(s) }
 
@@ -99,6 +99,6 @@ func NewCacheControl(data []byte) *CacheControl {
 	write exec;
 }%%
 
-	return cc
+	return good_return
 
 }
