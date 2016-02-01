@@ -5,13 +5,14 @@ package httpstring
 import (
 	"strings"
 	"time"
+	"fmt"
 )
 
 
 
-// line 10 "ragel/parser.rl"
+// line 11 "ragel/parser.rl"
 
-// line 15 "parser.go"
+// line 16 "parser.go"
 const cache_control_parser_start int = 1
 const cache_control_parser_first_final int = 16
 const cache_control_parser_error int = 0
@@ -19,10 +20,15 @@ const cache_control_parser_error int = 0
 const cache_control_parser_en_main int = 1
 
 
-// line 11 "ragel/parser.rl"
+// line 12 "ragel/parser.rl"
 
-// NewCacheControl is a struct type used for storing parsed tokens
-func NewCacheControl(data []byte) *CacheControl {
+func run(data []byte, cc *CacheControl) int {
+
+	defer func() {
+		if r := recover(); r != nil {
+		    fmt.Println("Recovered in f", r)
+		}
+	}()
 	
 	cs, p, pe := 0, 0, len(data)
 	eof := pe
@@ -31,12 +37,6 @@ func NewCacheControl(data []byte) *CacheControl {
 	str_end := 0
 	num, neg := 0, 1
 	val := false
-
-
-	cc := &CacheControl{
-		strings: make(map[string]string),
-		durations: make(map[string]time.Duration),
-	}
 
 	setbool := func(s string) {cc.setflag(s) }
 
@@ -7659,6 +7659,6 @@ tr189:
 // line 100 "ragel/parser.rl"
 
 
-	return cc
+	return good_return
 
 }
