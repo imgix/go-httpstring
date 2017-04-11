@@ -1,3 +1,10 @@
+# Deprecated:
+with [colm network pulling ragel's golang target](http://www.colm.net/news/2016/07/31/ragel-target-langs.html),
+continuing use and development of this project doesn't make much sense
+
+
+check out https://github.com/pquerna/cachecontrol instead
+
 # go-httpstring: ragel-based http string parser library
 
 [![GODOC](https://godoc.org/github.com/imgix/go-httpstring?status.svg)](http://godoc.org/github.com/imgix/go-httpstring)

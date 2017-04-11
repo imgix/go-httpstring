@@ -1,4 +1,8 @@
 /*
+Deprecated: with colm network pulling ragel's golang target,
+continuing use and development of this project doesn't make much sense
+
+use https://godoc.org/github.com/pquerna/cachecontrol instead
 
 Package httpstring provides parsing rules to scan http header strings for the purpose
 of extracting flags and values.
